@@ -18,21 +18,21 @@ Currently, two official plugins are available:
 ## Features
 
 ### Core Features
-*📱 Responsive design that works on desktop and mobile
-*🔐 User authentication with email and password
-*✅ Create, read, update, and delete tasks
-*🏷️ Categorize tasks (Todo, In-Progress, Completed)
-*📋 Multiple task selection for bulk operations
-*🎨 Different background colors for different task sections
-*🔄 Real-time updates using Firebase
+ * 📱 Responsive design that works on desktop and mobile
+ * 🔐 User authentication with email and password
+ * ✅ Create, read, update, and delete tasks
+ * 🏷️ Categorize tasks (Todo, In-Progress, Completed)
+ * 📋 Multiple task selection for bulk operations
+ * 🎨 Different background colors for different task sections
+ * 🔄 Real-time updates using Firebase
 
 ### User Interface
-*User Experience (UX)
-*Simple and user-friendly design
-*Task sorting and advanced search capabilities
-*Interactive drag-and-drop feature for task organization
-*Collapsible/expandable task categories
-*Mass delete option
+ * User Experience (UX)
+ * Simple and user-friendly design
+ * Task sorting and advanced search capabilities
+ * Interactive drag-and-drop feature for task organization
+ * Collapsible/expandable task categories
+ * Mass delete option
 
 ## Setup Instructions
 
