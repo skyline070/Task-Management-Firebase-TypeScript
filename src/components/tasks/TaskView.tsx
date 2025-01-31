@@ -7,6 +7,7 @@ import { format } from 'date-fns';
 import { BoardView } from './BoardView';
 import { DropResult } from '@hello-pangea/dnd';
 import { TaskEditModal } from './TaskEditModal';
+import { FaSearch } from 'react-icons/fa';
 
 // Task table component
 const TaskTable = memo(({ 
@@ -320,16 +321,11 @@ export const TaskView = () => {
     <div className="max-w-full overflow-x-auto">
       <div className="flex items-center justify-between flex-wrap gap-4 p-4">
         <div className="flex items-center space-x-4 flex-wrap gap-2">
-          <button
-            onClick={() => setShowAddTaskForm(true)}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 text-sm sm:text-base"
-          >
-            Add Task
-          </button>
+          
           <div className="flex items-center space-x-2">
             <button
               onClick={() => setViewMode('list')}
-              className={`px-3 py-1.5 rounded-lg text-sm sm:text-base ${
+              className={`px-3 py-1.5 rounded-full text-sm sm:text-base ${
                 viewMode === 'list'
                   ? 'bg-gray-200 text-gray-800'
                   : 'text-gray-600 hover:bg-gray-100'
@@ -339,7 +335,7 @@ export const TaskView = () => {
             </button>
             <button
               onClick={() => setViewMode('board')}
-              className={`px-3 py-1.5 rounded-lg text-sm sm:text-base ${
+              className={` px-3 py-1.5 rounded-full text-sm sm:text-base ${
                 viewMode === 'board'
                   ? 'bg-gray-200 text-gray-800'
                   : 'text-gray-600 hover:bg-gray-100'
@@ -350,13 +346,24 @@ export const TaskView = () => {
           </div>
         </div>
         <div className="w-full sm:w-auto">
+        <div className=" absolute px-4 py-3 ">
+          <FaSearch className="text-gray-400" />
+        </div>
           <input
             type="text"
             placeholder="Search tasks..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full sm:w-64 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+            className="search-input w-full sm:w-64 px-10 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
           />
+        </div>
+        <div >
+        <button
+            onClick={() => setShowAddTaskForm(true)}
+            className="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-200 text-sm sm:text-base"
+          >
+            Add Task
+          </button>
         </div>
       </div>
 
