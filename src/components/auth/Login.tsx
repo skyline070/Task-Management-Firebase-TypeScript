@@ -43,59 +43,63 @@ export const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex flex-wrap items-center ">
       {/* Left Section */}
-      <div className="w-1/2 flex items-center justify-center bg-white p-8">
-        <div className="max-w-md w-full">
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-8">
-              <div className="text-4xl font-bold text-purple-600 flex items-center">
-                <svg className="w-8 h-8 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-8 14H5v-2h6v2zm8-4H5v-2h14v2zm0-4H5V7h14v2z"/>
-                </svg>
-                TaskBuddy
+      <div className="w-full md:w-1/2">
+        <div className=" flex flex-col items-center bg-white p-8">
+          <div className="max-w-md w-full">
+            <div className="text-center">
+              <div className="flex items-center justify-center mb-8">
+                <div className="text-4xl font-bold text-purple-600 flex items-center">
+                  <svg className="w-8 h-8 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-8 14H5v-2h6v2zm8-4H5v-2h14v2zm0-4H5V7h14v2z"/>
+                  </svg>
+                  TaskBuddy
+                </div>
               </div>
+              <h2 className="text-xl text-gray-600 mb-8">
+                Streamline your workflow and track progress effortlessly with our all-in-one task management app.
+              </h2>
             </div>
-            <h2 className="text-xl text-gray-600 mb-8">
-              Streamline your workflow and track progress effortlessly with our all-in-one task management app.
-            </h2>
+            <button
+              onClick={handleGoogleSignIn}
+              className="w-full flex items-center justify-center px-4 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+            >
+              <img
+                className="w-6 h-6 mr-2"
+                src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+                alt="Google logo"
+              />
+              Continue with Google
+            </button>
           </div>
-          <button
-            onClick={handleGoogleSignIn}
-            className="w-full flex items-center justify-center px-4 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
-          >
-            <img
-              className="w-6 h-6 mr-2"
-              src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
-              alt="Google logo"
-            />
-            Continue with Google
-          </button>
         </div>
       </div>
 
       {/* Right Section - Preview */}
-      <div className="w-1/2 bg-gray-50 p-8 flex items-center justify-center">
-        <div className="max-w-2xl w-full bg-white rounded-lg shadow-lg p-6">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-2">
-              <span className="text-lg font-semibold">TaskBuddy</span>
+      <div className="w-full md:w-1/2"> 
+        <div className=" flex flex-col items-center bg-gray-50 p-8">
+          <div className="max-w-2xl w-full bg-white rounded-lg shadow-lg p-6">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center space-x-2">
+                <span className="text-lg font-semibold">TaskBuddy</span>
+              </div>
             </div>
-          </div>
-          <div className="space-y-4">
-            {/* Preview content */}
-            <div className="bg-purple-100 p-3 rounded-md">
-              <div className="font-medium text-purple-800">Todo (3)</div>
-            </div>
-            <div className="bg-blue-100 p-3 rounded-md">
-              <div className="font-medium text-blue-800">In Progress (3)</div>
-            </div>
-            <div className="bg-green-100 p-3 rounded-md">
-              <div className="font-medium text-green-800">Completed (3)</div>
+            <div className="space-y-4">
+              {/* Preview content */}
+              <div className="bg-purple-100 p-3 rounded-md">
+                <div className="font-medium text-purple-800">Todo (3)</div>
+              </div>
+              <div className="bg-blue-100 p-3 rounded-md">
+                <div className="font-medium text-blue-800">In Progress (3)</div>
+              </div>
+              <div className="bg-green-100 p-3 rounded-md">
+                <div className="font-medium text-green-800">Completed (3)</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>  
     </div>
   );
 };
