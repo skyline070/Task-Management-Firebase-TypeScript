@@ -1,68 +1,66 @@
-🚀 Task Management System
+##🚀 Task Management System
 
 A modern, scalable Task Management Application built with React, TypeScript, and Firebase, designed for real-time collaboration and an intuitive user experience.
 
 🔗 Live Demo: https://task-management-firebase-type-script.vercel.app
 
-✨ Overview
+##✨ Overview
 
 This application allows users to efficiently manage daily tasks with a clean UI and powerful features like real-time updates, authentication, and drag-and-drop organization. It focuses on performance, usability, and scalability for real-world use cases.
 
-🔥 Key Features
-📌 Core Functionality
-🔐 Secure user authentication (Email/Password)
-✅ Full CRUD operations for tasks
-🔄 Real-time updates with Firebase
-🏷️ Task categorization (Todo, In-Progress, Completed)
-📋 Bulk selection & mass delete
-🎨 User Experience
-📱 Fully responsive (mobile + desktop)
-🎯 Clean, intuitive UI
-🔍 Advanced search & sorting
-🧩 Drag-and-drop task management
-📂 Collapsible task sections
-🛠️ Tech Stack
+##🔥 Key Features 
 
-Frontend:
+#📌 Core Functionality
+- 🔐 Secure user authentication (Email/Password)
+- ✅ Full CRUD operations for tasks
+- 🔄 Real-time updates with Firebase
+- 🏷️ Task categorization (Todo, In-Progress, Completed)
+- 📋 Bulk selection & mass delete
 
-React.js + TypeScript
-Vite (fast build tool with HMR)
+#🎨 User Experience
+- 📱 Fully responsive (mobile + desktop)
+- 🎯 Clean, intuitive UI
+- 🔍 Advanced search & sorting
+- 🧩 Drag-and-drop task management
+- 📂 Collapsible task sections
+  
+##🛠️ Tech Stack
 
-Backend / Services:
+#Frontend:
+ -React.js + TypeScript
+ -Vite (fast build tool with HMR)
 
-Firebase (Authentication + Realtime Database)
+#Backend / Services:
+ -Firebase (Authentication + Realtime Database)
 
-Tools & Libraries:
+#Tools & Libraries:
+ -React Router DOM
+ -ESLint (code quality)
+  
+##⚡ Performance & Quality
+- Optimized rendering using React best practices
+- Fast load times with Vite bundling
+- C-lean, maintainable TypeScript code
+- Scalable architecture for future enhancements
+  
+##📦 Setup Instructions
+#Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- Git
 
-React Router DOM
-ESLint (code quality)
-⚡ Performance & Quality
-Optimized rendering using React best practices
-Fast load times with Vite bundling
-Clean, maintainable TypeScript code
-Scalable architecture for future enhancements
-📦 Setup Instructions
-Prerequisites
-Node.js (v14+)
-npm
-Git
-Installation
+#Installation
 git clone <your-repo-link>
 cd task-management-app
 npm install
 npm run dev
-📈 Future Enhancements
-📅 Calendar & reminders integration
-🤝 Team collaboration features
-📊 Analytics dashboard
-🌙 Dark mode
 
-## Setup Instructions
+#📈 Future Enhancements
+- 📅 Calendar & reminders integration
+- 🤝 Team collaboration features
+- 📊 Analytics dashboard
+- 🌙 Dark mode
 
-### Prerequisites
-- Node.js (v14 or higher)
-- npm (v6 or higher)
-- Git
 
 ## Expanding the ESLint configuration
 
