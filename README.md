@@ -27,20 +27,17 @@ This application allows users to efficiently manage daily tasks with a clean UI 
 🛠️ Tech Stack
 
 Frontend:
-
- -React.js + TypeScript
- -Vite (fast build tool with HMR)
+- React.js + TypeScript
+- Vite (fast build tool with HMR)
 
 Backend / Services:
-
- -Firebase (Authentication + Realtime Database)
+- Firebase (Authentication + Realtime Database)
 
 Tools & Libraries:
+- React Router DOM
+- ESLint (code quality)
 
- -React Router DOM
- -ESLint (code quality)
-  
-  ⚡ Performance & Quality
+⚡ Performance & Quality
 - Optimized rendering using React best practices
 - Fast load times with Vite bundling
 - C-lean, maintainable TypeScript code
@@ -53,9 +50,13 @@ Tools & Libraries:
 - Git
 
 #Installation
+
 git clone <your-repo-link>
+
 cd task-management-app
+
 npm install
+
 npm run dev
 
 📈 Future Enhancements
